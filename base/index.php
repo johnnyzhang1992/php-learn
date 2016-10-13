@@ -72,7 +72,21 @@ echo "<br>服务器的ip：".$_SERVER['REMOTE_ADDR'];
 echo "<br>服务器主机名称：".$_SERVER['SERVER_NAME'];
 echo "<br>HTTP 端口：".$_SERVER['SERVER_PORT'];
 echo "<br>执行脚本的相对路径：".$_SERVER['SCRIPT_NAME'];
-
+//位运算符
+$m =8;
+$n = 12;
+echo "\$m=".$m.";\$n=".$n."<br>";
+$mn = $m & $n;     //位与
+echo $mn."<br>";
+$mn = $m | $n;    //位或
+echo $mn."<br>";
+$mn = $m ^ $n;    //位异或
+echo $mn."<br>";
+$mn = ~ $n;      //位取反
+echo $mn."<br>";
+//三元运算符
+$value = 100;
+echo($value == true)?"三元运算符":"没有该值";
 
 
 ?>

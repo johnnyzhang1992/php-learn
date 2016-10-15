@@ -7,13 +7,14 @@
   * 运算符
   * 表达式以及函数
   
-##php-array
+## php-array
 >php数组
  * 运用数组-实现多文件上传
  
-##php-web
+## php-web
 >表单
  * wrap属性的soft和hard换行标记的区别
  * 在php中获取表单数据
  
- ##日期和时间
+ 
+ ## 日期和时间

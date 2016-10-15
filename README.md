@@ -1,6 +1,6 @@
 # php-learning
 学习php的过程中的一些示例
-##base
+## base
 >php语言基础：
   * 数据类型
   * 变量
@@ -17,4 +17,4 @@
  * 在php中获取表单数据
  
  
- ## 日期和时间
+## date and time 

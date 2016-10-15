@@ -6,7 +6,7 @@
  * Time: 22:59
  */
 $html = <<<HTML
-    <form name="form1" method="post" action="get_form_data.php">
+    <form name="form1" method="post" action=>
        <div style="margin-bottom: 10px">用户名：<input type="text" name="user" style="width: 200px"></div>
        <div style="margin-bottom: 10px">密&nbsp;码：<input type="password" name="pwd" style="width: 200px"></div>
        <div style="margin-bottom: 10px">性&nbsp;别：

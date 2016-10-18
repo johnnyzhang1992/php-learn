@@ -23,7 +23,7 @@ function _session_close(){
 function _session_read($key){
     global $handle; //全局变量$handle 链接数据库
     $time = time();  //设定当前时间
-    $sql = "select session_data from tb_session where session_key='$key' and session_time>$time";
+    $sql = "select session_data from session where session_key='$key' and session_time>$time";
     $result = mysqli_query($handle,$sql);
     $row = mysqli_fetch_array($result);
     if($row){
@@ -37,13 +37,13 @@ function _session_write($key,$data){
     global $handle;
     $time = 60*60; //设置失效时间
     $lapse_time = time() + $time; //得到时间戳
-    $sql = "select session_data from tb_session where session_key='$key' and session_time>$lapse_time";
+    $sql = "select session_data from session where session_key='$key' and session_time>$lapse_time";
     $result = mysqli_query($handle,$sql);
     if(mysqli_num_rows($result) ==0){ //没有结果
-        $sql = "insert into tb_session values('$key','$data',$lapse_time)"; //插入数据库SQL语句
+        $sql = "insert into session values('$key','$data',$lapse_time)"; //插入数据库SQL语句
         $result = mysqli_query($handle,$sql);
     }else{
-        $sql = "update tb_session set session_key = '$key',session_date = '$data',session_time = $lapse_time where session_key = '$key'"; // 修改数据库语句
+        $sql = "update session set session_key = '$key',session_date = '$data',session_time = $lapse_time where session_key = '$key'"; // 修改数据库语句
         $result = mysqli_query($handle,$sql);
     }
     return($result);
@@ -51,7 +51,7 @@ function _session_write($key,$data){
 //封装session_destroy()函数，根据$key值将数据库中的session删除
 function _session_destroy($key){
     global  $handle;
-    $sql = "delete from tb_session where session_key = '$key'";
+    $sql = "delete from session where session_key = '$key'";
     $result = mysqli_query($handle,$sql);
     return($result);
 }
@@ -59,7 +59,7 @@ function _session_destroy($key){
 function _session_gc($expiry_time){
     global $handle;
     $lapse_time = time(); //将参数$expiry_time()赋值为当前时间戳
-    $sql = "delete from tb_session where expiry_time<$lapse_time";
+    $sql = "delete from session where expiry_time<$lapse_time";
     $result = mysqli_query($handle,$sql);
     return($result);
 }

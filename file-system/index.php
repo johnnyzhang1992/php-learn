@@ -20,6 +20,40 @@ foreach ($f_arr as $cont){
 $f_chr = file_get_contents('file.text');
 echo $f_chr;
 
+//使用fgets()函数读取文件
+$fopen = fopen('02.text','rb');
+echo '<br>';
+while(!feof($fopen)){ //feof()函数测试指针是否到了文件结束的位置
+    echo fgets($fopen);//输出当前行
+}
+fclose($fopen);
+
+//使用fgetss()函数读取文件
+$fopen = fopen('02.text','rb');
+echo '<br>';
+while(!feof($fopen)){ //feof()函数测试指针是否到了文件结束的位置
+    echo fgetss($fopen);//输出当前行
+}
+fclose($fopen);
+
+//读取一个字符fgetc()
+$fopen = fopen('01.text','rb');
+echo '<br>';
+while(false !==($chr = fgetc($fopen))){
+    echo $chr;
+}
+fclose($fopen);
+
+//读取指定长度的字串fread()
+$filename = "03.text";
+$fp = fopen($filename,'rb');
+echo '<br>前32字节：';
+echo fread($fp,32); //使用fread()读取文件的前32个字节
+echo '<br>剩下内容：';
+echo fread($fp,filesize($filename)); //输出其余的文件内容
+
+
+
 //fclose($f_open);//操作完成后关闭文件
 
 //关闭文件

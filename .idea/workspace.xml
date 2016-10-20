@@ -1,23 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1852a8c-6bbb-40e4-98b4-e88edb8a5521" name="Default" comment="update README.md">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/blade.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/php-learning.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cookie-session/tmp/sess_fb81741783113be8b3009b0f77e11002" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file-system/04.text" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file-system/05.text" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file-system/06.text" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file-system/file-handle.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file-system/file-write.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file-system/flock.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file-system/open-close-dir.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file-system/scan-dir.php" />
+    <list default="true" id="a1852a8c-6bbb-40e4-98b4-e88edb8a5521" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/file-system/index.php" afterPath="$PROJECT_DIR$/file-system/file-read.php" />
     </list>
     <ignored path="php-learning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,8 +28,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="972">
-                <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+              <first_editor relative-caret-position="900">
+                <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -352,7 +338,7 @@
       <workItem from="1476884903708" duration="7248000" />
       <workItem from="1476928123876" duration="600000" />
       <workItem from="1476966690949" duration="232000" />
-      <workItem from="1476970253998" duration="5638000" />
+      <workItem from="1476970253998" duration="5739000" />
     </task>
     <task id="LOCAL-00001" summary="php 变量和常量">
       <created>1476286700204</created>
@@ -480,11 +466,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476966728718</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="文件的写入以及文件的处理">
+      <created>1476975941664</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1476975941664</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58287000" />
+    <option name="totallyTimeSpent" value="58388000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
@@ -533,7 +526,8 @@
     <MESSAGE value="文件系统" />
     <MESSAGE value="文件系统之文件的读取" />
     <MESSAGE value="update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
+    <MESSAGE value="文件的写入以及文件的处理" />
+    <option name="LAST_COMMIT_MESSAGE" value="文件的写入以及文件的处理" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -936,8 +930,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="972">
-            <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+          <first_editor relative-caret-position="900">
+            <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
             <folding />
           </first_editor>
           <second_editor />

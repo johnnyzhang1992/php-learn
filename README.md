@@ -23,3 +23,4 @@
  * cookie
  * session
 ## file-system
+ * 文件的读取

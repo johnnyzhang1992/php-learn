@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1852a8c-6bbb-40e4-98b4-e88edb8a5521" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oop/class/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="php-learning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,7 +24,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -37,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/oop/class/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="955">
@@ -97,9 +97,9 @@
         <option value="$PROJECT_DIR$/file-system/file-upload/index.php" />
         <option value="$PROJECT_DIR$/file-system/file-upload/upload.php" />
         <option value="$PROJECT_DIR$/file-system/file-upload/mul-upload.php" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/class/index.php" />
         <option value="$PROJECT_DIR$/oop/class/index.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -296,7 +296,7 @@
       <workItem from="1476966690949" duration="232000" />
       <workItem from="1476970253998" duration="6198000" />
       <workItem from="1477014523215" duration="679000" />
-      <workItem from="1477053889482" duration="8163000" />
+      <workItem from="1477053889482" duration="8237000" />
     </task>
     <task id="LOCAL-00001" summary="php 变量和常量">
       <created>1476286700204</created>
@@ -452,11 +452,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477059372063</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="面向对象编程之类">
+      <created>1477063899405</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1477063899405</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67689000" />
+    <option name="totallyTimeSpent" value="67763000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
@@ -508,7 +515,8 @@
     <MESSAGE value="update README.md" />
     <MESSAGE value="上传文件" />
     <MESSAGE value="update README.md 增加上传文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="update README.md 增加上传文件" />
+    <MESSAGE value="面向对象编程之类" />
+    <option name="LAST_COMMIT_MESSAGE" value="面向对象编程之类" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -892,17 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1080">
-            <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/file-system/open-close-dir.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -920,6 +917,17 @@
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1080">
+            <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

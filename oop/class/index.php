@@ -84,3 +84,34 @@ class SportObject2{
 }
 $sport2 = new SportObject2('Mike','185','80','21','男'); //实例化类，并传递参数
 echo $sport2->bootFootball(); //执行类中的方法
+
+//析构方法
+class SportObject3{
+    public  $name;  //定义成员变量
+    public  $height;
+    public  $avoirdupois;
+    public  $age;
+    public  $sex;
+    public function __construct($name,$height,$avoirdupois,$age,$sex){ //定义构造方法
+        $this->name = $name; //为成员变量赋值
+        $this->height = $height;
+        $this->avoirdupois = $avoirdupois;
+        $this->age = $age;
+        $this->sex = $sex;
+    }
+    function bootFootball(){ //声明成员方法
+        if($this->height<180 && $this->avoirdupois<85){
+            return $this->name.":符合踢足球的要求！<br>"; //方法实现的功能
+        }else{
+            return $this->name.":不符合踢足球的要求！<br>"; //方法实现的功能
+        }
+    }
+    function __destruct()
+    {
+        // TODO: Implement __destruct() method.
+        echo "<br><p><b>对象被销毁，调用析构函数</b></p>";
+    }
+}
+$sport3 = new SportObject3('Lee','185','80','21','男'); //实例化类，并传递参数
+//echo $sport3->bootFootball(); //执行类中的方法
+//unset($sport3)

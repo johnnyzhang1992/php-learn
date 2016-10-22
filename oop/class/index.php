@@ -156,10 +156,10 @@ class WeightLifting extends SportObject4{ //定义子类，继承父类
     function showMe()
     {
        if($this->avoirdupois<85){
-           return $this->name."符合举重的要求！";
+           return $this->name.",符合举重的要求！";
        }
        else{
-           return $this->name."不符合举重的要求";
+           return $this->name.",不符合举重的要求";
        }
     }
 }
@@ -168,3 +168,27 @@ $beatbasketball = new BeatBasketBall('科技','190'); //实例化子类
 $weightlifting = new WeightLifting('John','185','80','20','男');
 echo $beatbasketball->showMe().'<br>'; //输出结果
 echo $weightlifting->showMe().'<br>';
+
+//多态
+class C{
+    function __call($name, $num) // 调用不存在的方法
+    {
+        echo "<br>方法名称：".$name.'<p>'; //输出方法名
+        echo "参数存在的个数".count($num).'<p>';//输出参数的个数
+        if(count($num) == 1){ //根据参数的不同调用不同的方法
+            echo @$this->list1($a);
+        }
+        if(count($num) == 2){
+            echo @$this->list2($c,$b);
+        }
+        // TODO: Implement __call() method.
+    }
+    public function list1($a){ //定义方法
+        return "这是list1函数";
+    }
+    public  function list2($c,$b){
+        return "这是list2函数";
+    }
+}
+$a = new C; //类的实例化
+$a->listshow(1,2); //调用方法，传递参数

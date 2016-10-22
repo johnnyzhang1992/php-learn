@@ -40,8 +40,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/oop/class/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="847">
-              <caret line="159" column="8" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="8" />
+            <state relative-caret-position="1207">
+              <caret line="193" column="30" selection-start-line="193" selection-start-column="30" selection-end-line="193" selection-end-column="30" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
               </folding>
@@ -297,7 +297,7 @@
       <workItem from="1476970253998" duration="6198000" />
       <workItem from="1477014523215" duration="679000" />
       <workItem from="1477053889482" duration="8862000" />
-      <workItem from="1477142075803" duration="5226000" />
+      <workItem from="1477142075803" duration="6526000" />
     </task>
     <task id="LOCAL-00001" summary="php 变量和常量">
       <created>1476286700204</created>
@@ -488,11 +488,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477146008832</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="添加继承">
+      <created>1477147427696</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1477147427696</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73614000" />
+    <option name="totallyTimeSpent" value="74914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
@@ -548,7 +555,8 @@
     <MESSAGE value="添加类常量部分" />
     <MESSAGE value="添加构造方法" />
     <MESSAGE value="添加析构方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加析构方法" />
+    <MESSAGE value="添加继承" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加继承" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -911,8 +919,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/oop/class/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="847">
-          <caret line="159" column="8" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="8" />
+        <state relative-caret-position="1207">
+          <caret line="193" column="30" selection-start-line="193" selection-start-column="30" selection-end-line="193" selection-end-column="30" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
           </folding>

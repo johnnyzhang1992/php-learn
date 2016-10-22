@@ -115,3 +115,56 @@ class SportObject3{
 $sport3 = new SportObject3('Lee','185','80','21','男'); //实例化类，并传递参数
 //echo $sport3->bootFootball(); //执行类中的方法
 //unset($sport3)
+
+//继承
+
+//父类
+class SportObject4{
+    public  $name;  //定义成员变量
+    public  $avoirdupois;
+    public  $age;
+    public  $sex;
+    public function __construct($name,$height,$avoirdupois,$age,$sex){ //定义构造方法
+        $this->name = $name; //为成员变量赋值
+        $this->height = $height;
+        $this->avoirdupois = $avoirdupois;
+        $this->age = $age;
+        $this->sex = $sex;
+    }
+    function showMe(){ //在父类中定义方法
+        echo '这句话不会显示。';
+    }
+}
+//子类 BeatBasketBall
+class BeatBasketBall extends SportObject4{ //定义子类，继承父类
+    public $height;
+    function __construct($name, $height) //定义构造方法
+    {
+        $this->height = $height; //为成员变量赋值
+        $this->name = $name;
+    }
+    function showMe(){ //定义方法
+        if($this->height>185){
+            return $this->name.",符合打篮球的要求！"; //方法的实现
+        }else{
+            return $this->name.",不符合打篮球的要求！";
+        }
+    }
+}
+//子类 WeightLifting
+class WeightLifting extends SportObject4{ //定义子类，继承父类
+    function showMe()
+    {
+       if($this->avoirdupois<85){
+           return $this->name."符合举重的要求！";
+       }
+       else{
+           return $this->name."不符合举重的要求";
+       }
+    }
+}
+//实例化对象
+$beatbasketball = new BeatBasketBall('科技','190'); //实例化子类
+$weightlifting = new WeightLifting('John','185','80','20','男');
+echo $beatbasketball->showMe().'<br>'; //输出结果
+echo $weightlifting->showMe().'<br>';

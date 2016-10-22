@@ -58,6 +58,29 @@ class BookObject{
 $book = new BookObject(); //实例化对象
 $book->setObjectName('PHP类'); //调用方法 setObjectName()
 echo BookObject::BOOK_TYPE."->"; //输出常量 BOOK_TYPE
-echo $book->getObjectName(); //调用方法 getObjectName()
+echo $book->getObjectName().'<br>'; //调用方法 getObjectName()
 
-//
+//构造方法
+class SportObject2{
+    public  $name;  //定义成员变量
+    public  $height;
+    public  $avoirdupois;
+    public  $age;
+    public  $sex;
+    public function __construct($name,$height,$avoirdupois,$age,$sex){ //定义构造方法
+        $this->name = $name; //为成员变量赋值
+        $this->height = $height;
+        $this->avoirdupois = $avoirdupois;
+        $this->age = $age;
+        $this->sex = $sex;
+    }
+    function bootFootball(){ //声明成员方法
+        if($this->height<180 && $this->avoirdupois<85){
+            return $this->name.":符合踢足球的要求！<br>"; //方法实现的功能
+        }else{
+            return $this->name.":不符合踢足球的要求！<br>"; //方法实现的功能
+        }
+    }
+}
+$sport2 = new SportObject2('Mike','185','80','21','男'); //实例化类，并传递参数
+echo $sport2->bootFootball(); //执行类中的方法

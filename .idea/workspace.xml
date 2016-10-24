@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1852a8c-6bbb-40e4-98b4-e88edb8a5521" name="Default" comment="">
+    <list default="true" id="a1852a8c-6bbb-40e4-98b4-e88edb8a5521" name="Default" comment="添加">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oop/class/index.php" afterPath="$PROJECT_DIR$/oop/class/index.php" />
     </list>
@@ -40,11 +40,11 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/oop/class/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
-              <caret line="225" column="28" selection-start-line="225" selection-start-column="28" selection-end-line="225" selection-end-column="28" />
+            <state relative-caret-position="1077">
+              <caret line="274" column="0" selection-start-line="274" selection-start-column="0" selection-end-line="274" selection-end-column="0" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
-                <marker date="1477316919635" expanded="true" signature="6083:6152" ph="..." />
+                <marker date="1477319371473" expanded="true" signature="6083:6152" ph="..." />
               </folding>
             </state>
           </provider>
@@ -301,7 +301,7 @@
       <workItem from="1477142075803" duration="7776000" />
       <workItem from="1477272934136" duration="262000" />
       <workItem from="1477306505624" duration="195000" />
-      <workItem from="1477314765670" duration="2179000" />
+      <workItem from="1477314765670" duration="4581000" />
     </task>
     <task id="LOCAL-00001" summary="php 变量和常量">
       <created>1476286700204</created>
@@ -506,11 +506,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477148764992</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="添加$this和操作符 ::">
+      <created>1477316968638</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1477316968638</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78800000" />
+    <option name="totallyTimeSpent" value="81202000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1384" height="888" extended-state="6" />
@@ -932,11 +939,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/oop/class/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="225" column="28" selection-start-line="225" selection-start-column="28" selection-end-line="225" selection-end-column="28" />
+        <state relative-caret-position="1077">
+          <caret line="274" column="0" selection-start-line="274" selection-start-column="0" selection-end-line="274" selection-end-column="0" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
-            <marker date="1477316919635" expanded="true" signature="6083:6152" ph="..." />
+            <marker date="1477319371473" expanded="true" signature="6083:6152" ph="..." />
           </folding>
         </state>
       </provider>

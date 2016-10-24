@@ -224,3 +224,66 @@ class I_book extends Book{ //Book的子类
     }
 }
 $obj = new I_book(); //实例化对象
+
+//数据隐藏
+
+// public（公共成员）
+
+// private (私有成员)
+// 被 private 关键词修饰的变量和方法，只能在所属类的内部被调用，不可以在类外被调用，在子类中也不可以
+class E_book{
+    private $name = 'computer'; //声明私有变量
+    public function setName($name){ //设置私有变量方法
+        $this->name = $name;
+    }
+    public function getName(){ //读取私有变量
+        return $this->name;
+    }
+}
+class L_book extends E_book{ //E_book的子类
+
+}
+$l_book = new L_book();//实例化对象
+echo '<p>正确操作私有变量的方法';
+$l_book->setName('PHP5从入门到应用开发'); //正确操作私有变量
+echo $l_book->getName();
+echo '<p>错误操作私有变量的结果';
+//echo E_book::$name; //错误操作私有变量
+//Fatal error: Uncaught Error: Cannot access private property E_book::$name in
+// D:\laragon\www\php-learning\oop\class\index.php:249 Stack trace: #0 {main}
+// thrown in D:\laragon\www\php-learning\oop\class\index.php on line 249
+
+// protected(保护成员)
+// 背保护的类成员，可以在本类和子类中国被调用，其他地方不可以被调用
+class M_book{
+    protected $name = 'computer'; //声明保护变量
+}
+class N_book extends M_book{ //M_book 的子类
+    public function showMe(){
+        echo '<p>对于Protected 修饰的变量，在子类中国是可以直接调用的，如： $name = '.$this->name;
+    }
+}
+$n_book = new N_book();//实例化对象
+$n_book->showMe();
+echo '<p>但在其他的地方是不可以调用的，否则：';//对保护变量进行操作
+//$n_book->name= 'history';
+//Fatal error: Uncaught Error: Cannot access protected property N_book::$name
+// in D:\laragon\www\php-learning\oop\class\index.php:266 Stack trace: #0 {main} thrown
+// in D:\laragon\www\php-learning\oop\class\index.php on line 266
+
+//静态变量（方法）
+
+class U_book{
+    static $num = 0; //声明一个静态变量$num，初始值为0
+    public function showMe(){ //声明一个方法
+        echo '<p>您是第：'.self::$num.'位访客'; //输出静态变量
+        self::$num++; //将静态变量+1
+    }
+}
+$u_book = new U_book(); //实例化对象
+$u_book->showMe(); //调用对象$u_book 的方法
+echo '<br>';
+$u_book1 = new U_book(); //实例化对象
+$u_book1->showMe(); // 调用$u_book1的方法
+echo '<br>';
+echo '<p>您是第：'.U_book::$num.'位访客';

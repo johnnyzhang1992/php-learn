@@ -192,3 +192,35 @@ class C{
 }
 $a = new C; //类的实例化
 $a->listshow(1,2); //调用方法，传递参数
+
+//$this-> 和 ：： 的使用
+
+//$this->
+class example{  //创建类 example
+    function exam(){  //创建成员方法
+        if(isset($this)){  //判断变量$this 是否存在
+            echo "<p>\$this的值是:".get_class($this);  //如果存在，输出$this 所属类的名字
+        }else{
+            echo "<p>\$this 未定义"; //如果不存在，
+        }
+    }
+}
+$class_name = new example(); //实例化对象$class_name
+$class_name->exam(); //调用方法
+//get_class()函数返回对象所属类的名字，如果不是对象，则返回false
+
+//操作符 ::
+class Book{ //创建类
+    const NAME = 'computer'; //常量
+    function __construct(){ //构造方法
+        echo '<p>本月图书冠军为：'.Book::NAME; //输出默认值
+    }
+}
+class I_book extends Book{ //Book的子类
+    const NAME = 'foreign language'; //声明常量
+    function __construct(){  //子类的构造方法
+        parent::__construct(); //调用父类的构造方法
+        echo '<p>本月图书冠军为：'.self::NAME; //输出本类的默认值
+    }
+}
+$obj = new I_book(); //实例化对象

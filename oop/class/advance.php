@@ -88,3 +88,45 @@ $member->purview(); //调用 $member对象的purview()方法
 echo '<P>';
 $manage->purview(); //调用 $manage对象的purview()方法
 $manage->popedom(); //调用 $manage对象的popedom()方法
+
+//克隆对象
+
+//克隆对象
+class SportObject02{ //声明类
+    private $object_type = 'book'; //声明私有变量，并赋值
+    public function setType($type){ //声明成员方法
+        $this->object_type = $type;
+    }
+    public function  getType(){
+        return $this->object_type;
+    }
+}
+$book01 = new SportObject02();
+$book02 = $book01; //使用普通数据类型的方法给对象赋值
+$book03 = clone $book01; // clone 不是引用，对类内变量赋值，不影响原clone 类的 变量值
+$book03->setType('Computer'); //改变对象$book02的值
+echo "<p>对象\$book01 的值为：".$book01->getType();
+
+//__clone()方法
+//作用：在克隆对象的过程中，调用 __clone() 方法，可以是克隆出来的对象保持自己的一些方法和属性
+
+class SportObject03{ //类
+    private $object_type = 'book'; //声明私有变量
+    public function setType($type){ //声明成员方法
+        $this->object_type = $type;
+    }
+    public function  getType(){
+        return $this->object_type;
+    }
+    public function __clone()
+    {
+        $this->object_type = 'computer';
+        // TODO: Implement __clone() method.
+    }
+}
+$book04 = new SportObject03(); // 实例化对象
+$book05 = clone $book04; // 使用克隆对象的方法给对象$book05 赋值
+echo '<p>对象$book04 的变量值为：'.$book04->getType();
+echo '<p>对象$book05 的变量值为：'.$book05->getType();
+//后者对象克隆了前者对象的全部行为和属性，也拥有了属于自己的成员变量值
+

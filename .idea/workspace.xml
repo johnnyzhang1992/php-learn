@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1852a8c-6bbb-40e4-98b4-e88edb8a5521" name="Default" comment="添加 对象比较">
+    <list default="true" id="a1852a8c-6bbb-40e4-98b4-e88edb8a5521" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oop/class/method.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oop/class/advance.php" afterPath="$PROJECT_DIR$/oop/class/advance.php" />
     </list>
     <ignored path="php-learning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,11 +36,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="advance.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="advance.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/oop/class/advance.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
-              <caret line="151" column="3" selection-start-line="151" selection-start-column="2" selection-end-line="151" selection-end-column="8" />
+            <state relative-caret-position="1207">
+              <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+              <folding>
+                <element signature="e#6#87#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="method.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/oop/class/method.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1207">
+              <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
               </folding>
@@ -100,6 +112,7 @@
         <option value="$PROJECT_DIR$/oop/class/index.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/oop/class/advance.php" />
+        <option value="$PROJECT_DIR$/oop/class/method.php" />
       </list>
     </option>
   </component>
@@ -304,7 +317,7 @@
       <workItem from="1477358836177" duration="616000" />
       <workItem from="1477403160669" duration="5199000" />
       <workItem from="1477445209163" duration="101000" />
-      <workItem from="1477488718614" duration="3381000" />
+      <workItem from="1477488718614" duration="6706000" />
     </task>
     <task id="LOCAL-00001" summary="php 变量和常量">
       <created>1476286700204</created>
@@ -551,11 +564,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477491316144</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="添加 对象类型检测">
+      <created>1477492145501</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1477492145501</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90542000" />
+    <option name="totallyTimeSpent" value="93867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
@@ -593,7 +613,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="php 变量和常量" />
     <MESSAGE value="日常更新" />
     <MESSAGE value="php 数组以及相关例子" />
     <MESSAGE value="php与web页面的交互之form" />
@@ -618,7 +637,8 @@
     <MESSAGE value="update README.md" />
     <MESSAGE value="添加 克隆对象" />
     <MESSAGE value="添加 对象比较" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加 对象比较" />
+    <MESSAGE value="添加 对象类型检测" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加 对象类型检测" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -627,13 +647,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/base/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1558">
-          <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/base/function.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -980,8 +993,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/oop/class/advance.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="151" column="3" selection-start-line="151" selection-start-column="2" selection-end-line="151" selection-end-column="8" />
+        <state relative-caret-position="1207">
+          <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oop/class/method.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
           </folding>

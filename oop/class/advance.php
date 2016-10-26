@@ -130,3 +130,23 @@ echo '<p>对象$book04 的变量值为：'.$book04->getType();
 echo '<p>对象$book05 的变量值为：'.$book05->getType();
 //后者对象克隆了前者对象的全部行为和属性，也拥有了属于自己的成员变量值
 
+//对象比较
+
+class SportObject04{
+    private $name;
+    function __construct($name)
+    {
+        $this->name = $name;
+    }
+}
+$book06 = new SportObject04('book'); //实例化对象
+$clonebook = clone $book06; //克隆对象
+$referBook = $book06; //引用对象
+if($clonebook == $book06){ //使用 == 比较克隆对象和原对象
+    echo '<p>两个对象的内容相等';
+}
+if($referBook == $book06){ // 使用 == 比较引用对象和原对象
+    echo '<P>两个对象的引用地址相等';
+}
+
+//对象类型检测

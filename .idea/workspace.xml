@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1852a8c-6bbb-40e4-98b4-e88edb8a5521" name="Default" comment="">
+    <list default="true" id="a1852a8c-6bbb-40e4-98b4-e88edb8a5521" name="Default" comment="添加 对象比较">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oop/class/advance.php" afterPath="$PROJECT_DIR$/oop/class/advance.php" />
     </list>
@@ -39,8 +39,8 @@
       <file leaf-file-name="advance.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/oop/class/advance.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1279">
-              <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+            <state relative-caret-position="703">
+              <caret line="151" column="3" selection-start-line="151" selection-start-column="2" selection-end-line="151" selection-end-column="8" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
               </folding>
@@ -304,7 +304,7 @@
       <workItem from="1477358836177" duration="616000" />
       <workItem from="1477403160669" duration="5199000" />
       <workItem from="1477445209163" duration="101000" />
-      <workItem from="1477488718614" duration="2565000" />
+      <workItem from="1477488718614" duration="3381000" />
     </task>
     <task id="LOCAL-00001" summary="php 变量和常量">
       <created>1476286700204</created>
@@ -544,11 +544,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477490141281</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="添加 对象比较">
+      <created>1477491316144</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1477491316144</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89726000" />
+    <option name="totallyTimeSpent" value="90542000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
@@ -610,7 +617,8 @@
     <MESSAGE value="添加php 对象的高级应用" />
     <MESSAGE value="update README.md" />
     <MESSAGE value="添加 克隆对象" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加 克隆对象" />
+    <MESSAGE value="添加 对象比较" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加 对象比较" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -972,8 +980,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/oop/class/advance.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1279">
-          <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+        <state relative-caret-position="703">
+          <caret line="151" column="3" selection-start-line="151" selection-start-column="2" selection-end-line="151" selection-end-column="8" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
           </folding>

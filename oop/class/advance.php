@@ -150,3 +150,16 @@ if($referBook == $book06){ // 使用 == 比较引用对象和原对象
 }
 
 //对象类型检测
+//instanceof 操作符可以检测当前对象属于哪个类
+class SportObject05{ } // 创建类
+class MyBook01 extends SportObject05{ //创建子类
+    private $type;
+}
+$cBook = new MyBook01();//实例化对象
+if($cBook instanceof MyBook01){ //判断对象是否属于子类 MyBook01 类
+    echo '<P>对象$cBook 属于 MyBook01 类';
+}
+if($cBook instanceof SportObject05){ //判断对象是否属于子类 SportObject05 类
+    echo '<P>对象$cBook 属于 SportObject05 类';
+}
+

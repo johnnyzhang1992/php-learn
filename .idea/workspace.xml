@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1852a8c-6bbb-40e4-98b4-e88edb8a5521" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oop/class/method.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oop/class/method.php" afterPath="$PROJECT_DIR$/oop/class/method.php" />
     </list>
     <ignored path="php-learning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,7 +27,7 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/oop/class/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
+            <state relative-caret-position="4446">
               <caret line="239" column="27" selection-start-line="239" selection-start-column="27" selection-end-line="239" selection-end-column="27" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
@@ -39,7 +39,7 @@
       <file leaf-file-name="advance.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/oop/class/advance.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1207">
+            <state relative-caret-position="3040">
               <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
@@ -51,8 +51,8 @@
       <file leaf-file-name="method.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/oop/class/method.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1207">
-              <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+            <state relative-caret-position="450">
+              <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
               </folding>
@@ -127,10 +127,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 7" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-13" />
-    <option name="y" value="-13" />
-    <option name="width" value="2762" />
-    <option name="height" value="1770" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1384" />
+    <option name="height" value="888" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -157,6 +157,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -209,8 +211,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -317,7 +317,8 @@
       <workItem from="1477358836177" duration="616000" />
       <workItem from="1477403160669" duration="5199000" />
       <workItem from="1477445209163" duration="101000" />
-      <workItem from="1477488718614" duration="6706000" />
+      <workItem from="1477488718614" duration="6818000" />
+      <workItem from="1477576650100" duration="966000" />
     </task>
     <task id="LOCAL-00001" summary="php 变量和常量">
       <created>1476286700204</created>
@@ -571,17 +572,24 @@
       <option name="project" value="LOCAL" />
       <updated>1477492145501</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="添加 魔术方法__set()，__get()">
+      <created>1477495775238</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1477495775238</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93867000" />
+    <option name="totallyTimeSpent" value="94945000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
+    <frame x="-8" y="-8" width="1384" height="888" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3018868" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30664653" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -613,7 +621,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="日常更新" />
     <MESSAGE value="php 数组以及相关例子" />
     <MESSAGE value="php与web页面的交互之form" />
     <MESSAGE value="php获取表单的值" />
@@ -638,7 +645,8 @@
     <MESSAGE value="添加 克隆对象" />
     <MESSAGE value="添加 对象比较" />
     <MESSAGE value="添加 对象类型检测" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加 对象类型检测" />
+    <MESSAGE value="添加 魔术方法__set()，__get()" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加 魔术方法__set()，__get()" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -666,7 +674,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="152">
             <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -698,7 +705,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -723,7 +729,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="152">
             <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -821,20 +826,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/Tencent Files/1113638674/FileRecv/css3-ver-accordion-menu(1)/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/Tencent Files/1113638674/FileRecv/css3-ver-accordion-menu(1)/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Documents/Tencent Files/1113638674/FileRecv/css3-ver-accordion-menu(1)/js/index.js" />
+    <entry file="file://$USER_HOME$/Documents/Tencent Files/1113638674/FileRecv/css3-ver-accordion-menu(1)/index.html" />
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -975,7 +968,6 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="1061">
             <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -983,7 +975,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/oop/class/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
+        <state relative-caret-position="4446">
           <caret line="239" column="27" selection-start-line="239" selection-start-column="27" selection-end-line="239" selection-end-column="27" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
@@ -993,7 +985,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/oop/class/advance.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
+        <state relative-caret-position="3040">
           <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
@@ -1003,8 +995,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/oop/class/method.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+        <state relative-caret-position="450">
+          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
           </folding>

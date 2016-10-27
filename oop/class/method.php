@@ -38,7 +38,7 @@ $MyComputer->type; //调用变量$type
 $MyComputer->name; //调用变量
 
 // __call() 方法
-//作用是:党成员试图调用不存或不可见的成员方法时，php会先调用__call()方法来存储方法名和参数。
+//作用是:当成员试图调用不存或不可见的成员方法时，php会先调用__call()方法来存储方法名和参数。
 class S_Object{
     public function myDream(){ //类方。法
         echo '<p>调用的方法存下，直接执行此方法';
@@ -55,3 +55,42 @@ class S_Object{
 $exam = new S_Object(); // 实例化对象
 $exam->myDream(); //调用存在的方法
 $exam->mDream('how','what','why');//调用不存在的方法
+
+// __sleep() 和 __wakeup()方法
+class Sp_Object{
+    private $type = 'DIY'; // 声明私有变量
+    public function getType(){  // 声明方法，用来调用私有变量
+        return $this->type; //返回变量值
+    }
+    public function __sleep() // 声明魔术方法 __sleep()方法
+    {
+       echo '<p>使用 serialize()函数将对象保存起来，可以存放到文本文件，数据库等地方';
+        return $this;
+    }
+    public function __wakeup() // 声明魔术方法__wakeup()方法
+    {
+       echo '<p>当需要该数据时，使用 unserialize() 函数对已序列化的字符串进行操作，将其转换回对象';
+    }
+}
+//$myBook1 = new Sp_Object(); // 实例化对象
+//$i = serialize($myBook1); //序列化对象
+//echo '<p>序列化后的字符串：'.$i;
+//$reBook = unserialize($i); //将序列化
+//echo '<p>还原后的成员变量：'.$reBook->getType(); //调用新对象 $rebook 的 getType()方法
+
+//解析失败
+
+// __toString() 方法
+//作用：当使用echo或 print 输出对象时，将对象转化为字符串
+class Spo_Object{
+    private $type = 'Diy';
+    public function __toString()
+    {
+       return $this->type;
+    }
+}
+$myCom = new Spo_Object(); //实例化对象
+echo '<p>对象$myCom 的值为：'.$myCom;
+
+//__autoload() 方法
+//

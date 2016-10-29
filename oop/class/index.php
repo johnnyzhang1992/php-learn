@@ -250,8 +250,8 @@ echo $l_book->getName();
 echo '<p>错误操作私有变量的结果';
 //echo E_book::$name; //错误操作私有变量
 //Fatal error: Uncaught Error: Cannot access private property E_book::$name in
-// D:\laragon\www\php-learning\oop\class\index.php:249 Stack trace: #0 {main}
-// thrown in D:\laragon\www\php-learning\oop\class\index.php on line 249
+// D:\laragon\www\php-learning\oop\class\crypt.php:249 Stack trace: #0 {main}
+// thrown in D:\laragon\www\php-learning\oop\class\crypt.php on line 249
 
 // protected(保护成员)
 // 背保护的类成员，可以在本类和子类中国被调用，其他地方不可以被调用
@@ -268,8 +268,8 @@ $n_book->showMe();
 echo '<p>但在其他的地方是不可以调用的，否则：';//对保护变量进行操作
 //$n_book->name= 'history';
 //Fatal error: Uncaught Error: Cannot access protected property N_book::$name
-// in D:\laragon\www\php-learning\oop\class\index.php:266 Stack trace: #0 {main} thrown
-// in D:\laragon\www\php-learning\oop\class\index.php on line 266
+// in D:\laragon\www\php-learning\oop\class\crypt.php:266 Stack trace: #0 {main} thrown
+// in D:\laragon\www\php-learning\oop\class\crypt.php on line 266
 
 //静态变量（方法）
 

@@ -36,5 +36,8 @@
  
 ## PHP加密技术
  > PHP加密函数
- * crypt()函数
- * md5()函数
+ * crypt() 函数
+ * md5() 函数
+ * sha1() 函数
+ 
+## PHP 操作 MySQL 数据库

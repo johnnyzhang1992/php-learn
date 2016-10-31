@@ -24,13 +24,13 @@ HTML;
 echo $html;
 $conn = mysqli_connect('localhost','root','');
 mysqli_select_db($conn,'book') or die ('数据库访问错误'.mysqli_errno($conn));
-mysqli_query($conn,"set names utf8_general_ci");
+mysqli_query($conn,"set names 'utf8' ");
 $sql = mysqli_query($conn,"select * from tb_book"); //执行查询语句
 $info = mysqli_fetch_array($sql);//获取查询结果，返回值为数组
 if($_POST['submit'] == '查询'){ //判断按钮 submit 的值是否为查询
     $txt_book = trim($_POST['txt_book']); //获取文本框提交的值
     echo "<p>您输入的关键词为：$txt_book";
-    $sql = mysqli_query($conn," select * from tb_book where bookname LIKE '$txt_book'");//执行模糊查询
+    $sql = mysqli_query($conn," select * from tb_book where bookname LIKE '%".$txt_book."%'");//执行模糊查询
     $info = mysqli_fetch_array($sql); //获取查询结果
     if (!$sql) {
         printf("Error: %s\n", mysqli_error($conn));

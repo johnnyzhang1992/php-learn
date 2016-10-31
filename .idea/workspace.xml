@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a1852a8c-6bbb-40e4-98b4-e88edb8a5521" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php-mysql/book_search/index.php" afterPath="$PROJECT_DIR$/php-mysql/book_search/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php-mysql/fetch_array.php" afterPath="$PROJECT_DIR$/php-mysql/fetch_array.php" />
     </list>
     <ignored path="php-learning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,23 +54,23 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/php-mysql/book_search/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+            <state relative-caret-position="716">
+              <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
               <folding>
-                <marker date="1477924443656" expanded="true" signature="166:444" ph="..." />
-                <marker date="1477924443656" expanded="true" signature="174:436" ph="..." />
-                <marker date="1477924443656" expanded="true" signature="179:427" ph="..." />
-                <marker date="1477924443656" expanded="true" signature="226:421" ph="..." />
-                <marker date="1477924443656" expanded="true" signature="240:259" ph="..." />
-                <marker date="1477924443656" expanded="true" signature="260:415" ph="..." />
-                <marker date="1477924443656" expanded="true" signature="650:671" ph="select * fro... tb_book" />
-                <marker date="1477924443656" expanded="true" signature="905:941" ph="select * fro... tb_book" />
-                <marker date="1477924443656" expanded="true" signature="905:949" ph="select * fro... tb_book" />
-                <marker date="1477924443656" expanded="true" signature="905:964" ph="select * fro... tb_book" />
-                <marker date="1477924443656" expanded="true" signature="1164:1213" ph="..." />
-                <marker date="1477924443656" expanded="true" signature="1291:1925" ph="..." />
-                <marker date="1477924443656" expanded="true" signature="1327:1575" ph="..." />
-                <marker date="1477924443656" expanded="true" signature="1608:1916" ph="..." />
+                <marker date="1477925454720" expanded="true" signature="166:444" ph="..." />
+                <marker date="1477925454720" expanded="true" signature="174:436" ph="..." />
+                <marker date="1477925454720" expanded="true" signature="179:427" ph="..." />
+                <marker date="1477925454720" expanded="true" signature="226:421" ph="..." />
+                <marker date="1477925454720" expanded="true" signature="240:259" ph="..." />
+                <marker date="1477925454720" expanded="true" signature="260:415" ph="..." />
+                <marker date="1477925454720" expanded="true" signature="650:671" ph="select * fro... tb_book" />
+                <marker date="1477925454720" expanded="true" signature="909:945" ph="select * fro... tb_book" />
+                <marker date="1477925454720" expanded="true" signature="909:953" ph="select * fro... tb_book" />
+                <marker date="1477925454720" expanded="true" signature="909:968" ph="select * fro... tb_book" />
+                <marker date="1477925454720" expanded="true" signature="1267:1316" ph="..." />
+                <marker date="1477925454720" expanded="true" signature="1394:2184" ph="..." />
+                <marker date="1477925454720" expanded="true" signature="1430:1756" ph="..." />
+                <marker date="1477925454720" expanded="true" signature="1789:2175" ph="..." />
               </folding>
             </state>
           </provider>
@@ -394,7 +392,7 @@
       <workItem from="1477664731548" duration="3947000" />
       <workItem from="1477748159059" duration="22397000" />
       <workItem from="1477877149412" duration="609000" />
-      <workItem from="1477921251189" duration="3237000" />
+      <workItem from="1477921251189" duration="4366000" />
     </task>
     <task id="LOCAL-00001" summary="php 变量和常量">
       <created>1476286700204</created>
@@ -718,11 +716,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477836681047</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="修复book_search案例，添加mysqli_fetch_object()案例">
+      <created>1477924580705</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1477924580705</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131784000" />
+    <option name="totallyTimeSpent" value="132913000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1384" height="888" extended-state="6" />
@@ -760,7 +765,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="文件系统之文件的读取" />
     <MESSAGE value="文件的写入以及文件的处理" />
     <MESSAGE value="上传文件" />
     <MESSAGE value="update README.md 增加上传文件" />
@@ -785,14 +789,15 @@
     <MESSAGE value="添加php加密之md5()函数" />
     <MESSAGE value="添加 php操作MYSQL 数据库之mysqli_query()" />
     <MESSAGE value="添加 php操作MYSQL 数据库之mysqli_fetch_array()" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加 php操作MYSQL 数据库之mysqli_fetch_array()" />
+    <MESSAGE value="修复book_search案例，添加mysqli_fetch_object()案例" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复book_search案例，添加mysqli_fetch_object()案例" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/php-mysql/book_search/index.php</url>
-          <line>33</line>
+          <line>35</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
@@ -1151,23 +1156,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php-mysql/book_search/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+        <state relative-caret-position="716">
+          <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
           <folding>
-            <marker date="1477924443656" expanded="true" signature="166:444" ph="..." />
-            <marker date="1477924443656" expanded="true" signature="174:436" ph="..." />
-            <marker date="1477924443656" expanded="true" signature="179:427" ph="..." />
-            <marker date="1477924443656" expanded="true" signature="226:421" ph="..." />
-            <marker date="1477924443656" expanded="true" signature="240:259" ph="..." />
-            <marker date="1477924443656" expanded="true" signature="260:415" ph="..." />
-            <marker date="1477924443656" expanded="true" signature="650:671" ph="select * fro... tb_book" />
-            <marker date="1477924443656" expanded="true" signature="905:941" ph="select * fro... tb_book" />
-            <marker date="1477924443656" expanded="true" signature="905:949" ph="select * fro... tb_book" />
-            <marker date="1477924443656" expanded="true" signature="905:964" ph="select * fro... tb_book" />
-            <marker date="1477924443656" expanded="true" signature="1164:1213" ph="..." />
-            <marker date="1477924443656" expanded="true" signature="1291:1925" ph="..." />
-            <marker date="1477924443656" expanded="true" signature="1327:1575" ph="..." />
-            <marker date="1477924443656" expanded="true" signature="1608:1916" ph="..." />
+            <marker date="1477925454720" expanded="true" signature="166:444" ph="..." />
+            <marker date="1477925454720" expanded="true" signature="174:436" ph="..." />
+            <marker date="1477925454720" expanded="true" signature="179:427" ph="..." />
+            <marker date="1477925454720" expanded="true" signature="226:421" ph="..." />
+            <marker date="1477925454720" expanded="true" signature="240:259" ph="..." />
+            <marker date="1477925454720" expanded="true" signature="260:415" ph="..." />
+            <marker date="1477925454720" expanded="true" signature="650:671" ph="select * fro... tb_book" />
+            <marker date="1477925454720" expanded="true" signature="909:945" ph="select * fro... tb_book" />
+            <marker date="1477925454720" expanded="true" signature="909:953" ph="select * fro... tb_book" />
+            <marker date="1477925454720" expanded="true" signature="909:968" ph="select * fro... tb_book" />
+            <marker date="1477925454720" expanded="true" signature="1267:1316" ph="..." />
+            <marker date="1477925454720" expanded="true" signature="1394:2184" ph="..." />
+            <marker date="1477925454720" expanded="true" signature="1430:1756" ph="..." />
+            <marker date="1477925454720" expanded="true" signature="1789:2175" ph="..." />
           </folding>
         </state>
       </provider>

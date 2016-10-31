@@ -29,9 +29,12 @@ $sql = mysqli_query($conn,"select * from tb_book"); //执行查询语句
 $info = mysqli_fetch_array($sql);//获取查询结果，返回值为数组
 if($_POST['submit'] == '查询'){ //判断按钮 submit 的值是否为查询
     $txt_book = trim($_POST['txt_book']); //获取文本框提交的值
-    echo "<p>您输入的关键词为：$txt_book";
+    echo "<p>您输入的关键词为：$txt_book<br>";
     $sql = mysqli_query($conn," select * from tb_book where bookname LIKE '%".$txt_book."%'");//执行模糊查询
+    $num = mysqli_num_rows($sql);//使用mysqli_num_rows()获取查询结果集中的记录数
+    echo @'Rows:'.$num.'<br>';
     $info = mysqli_fetch_array($sql); //获取查询结果
+
     if (!$sql) {
         printf("Error: %s\n", mysqli_error($conn));
         exit();
@@ -45,20 +48,20 @@ do{
     $table = <<<HTML
 <table border="0">
 <tr align="left" bgcolor="#f5f5f5" >
-<td height="20" align="center">编号</td>
-<td height="20" align="center">图书名称</td>
-<td height="20" align="center">出版时间</td>
-<td height="20" align="center">图书定价</td>
-<td height="20" align="center">作者</td>
-<td height="20" align="center">出版社</td>
+<td height="20" width="205" align="center">编号</td>
+<td height="20"  width="205" align="center">图书名称</td>
+<td height="20"  width="205" align="center">出版时间</td>
+<td height="20" align="center"  width="205" >图书定价</td>
+<td height="20" align="center" width="205" >作者</td>
+<td height="20" align="center" width="205" >出版社</td>
 </tr>
 <tr align="left" bgcolor="#fff">
-<td height="20" align="center">$info[id]</td>
-<td height="20" align="center">$info[bookname]</td>
-<td height="20" align="center">$info[issu_date]</td>
-<td height="20" align="center">$info[price]</td>
-<td height="20" align="center">$info[maker]</td>
-<td height="20" align="center">$info[publisher]</td>
+<td height="20" align="center" width="205" >$info[id]</td>
+<td height="20" align="center" width="205" >$info[bookname]</td>
+<td height="20" align="center" width="205" >$info[issu_date]</td>
+<td height="20" align="center" width="205" >$info[price]</td>
+<td height="20" align="center" width="205" >$info[maker]</td>
+<td height="20" align="center" width="205" >$info[publisher]</td>
 </tr>
 </table>
 HTML;

@@ -6,6 +6,10 @@
  * Time: 23:01
  */
 require 'class/system.php';
+require 'header.php';
+require 'footer.php';
 //主页
-echo SITE_NAME.'<br>';
-echo SITE_OWNER;
+echo "<html style='padding: 0;margin: 0'><body style='padding: 0;margin: 0'>";
+echo $header;
+echo $footer;
+echo "</html></body?";

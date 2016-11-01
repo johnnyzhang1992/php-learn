@@ -24,7 +24,7 @@ class ConnDB{
         mysqli_query($this->conn,"set names 'utf-8'");//设置数据库的编码格式
         return $this->conn; //返回连接对象
     }
-    function CloseConn9(){ //定义关闭数据库的方法
+    function CloseConn(){ //定义关闭数据库的方法
          mysqli_close($this->conn);
     }
 }

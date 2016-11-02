@@ -6,10 +6,19 @@
  * Time: 23:01
  */
 require 'class/system.php';
-require 'header.php';
-require 'footer.php';
 //主页
-echo "<html style='padding: 0;margin: 0'><body style='padding: 0;margin: 0'>";
-echo $header;
-echo $footer;
-echo "</html></body?";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><?php echo SITE_NAME ?></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<?php include 'header.php'; ?>
+
+<?php include 'footer.php'; ?>
+</body>
+</html>

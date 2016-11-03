@@ -9,5 +9,5 @@
 ?>
 <!--网站footer-->
 <div class="footer col-md-12">
-   &copy; 2016 <?php echo SITE_OWNER ?>
+   &copy; 2016 <a href="/index.php" target="_blank" ><?php echo SITE_OWNER ?></a>
 </div>

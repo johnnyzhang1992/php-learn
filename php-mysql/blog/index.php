@@ -6,6 +6,8 @@
  * Time: 23:01
  */
 require 'class/system.php';
+require 'controller/get_home_data.php';
+
 //主页
 ?>
 <!DOCTYPE html>
@@ -78,13 +80,13 @@ require 'class/system.php';
     <div class="side-content col-md-4">
        <div class="user-card" style="text-align: center">
            <div class="avatar" style="">
-               <img src="images/avatar/avatar.JPG" alt="" style="width: 60px;height: 60px">
+               <img src="<?php $home_data->get_user_avatar() ?>" alt="" style="width: 60px;height: 60px">
            </div>
            <div class="user-name">
-               <a href="#">小小梦工场</a>
+               <a href="#"><?php $home_data->get_user_name()?></a>
            </div>
            <div class="user-description">
-               <p>时间会告诉你答案</p>
+               <p><?php $home_data->get_user_description() ?></p>
            </div>
        </div>
     </div>

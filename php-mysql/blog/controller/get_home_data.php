@@ -32,5 +32,5 @@ class getData{
     }
 }
 $home_data = new getData();
-$home_data->get_data($_COOKIE['username']);
-echo $_COOKIE['username'];
+$home_data->get_data($_COOKIE['user_name']);
+//echo $_COOKIE['username'];

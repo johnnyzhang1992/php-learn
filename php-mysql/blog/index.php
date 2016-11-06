@@ -29,50 +29,16 @@ require 'controller/get_home_data.php';
         </div>
         <div class="blog-content">
             <ul class="blog-list">
-                <li class="blog-item">
-                    <div class="item-title">
-                        <h4>标题</h4>
-                    </div>
-                    <div class="item-tag">
-                        <a href="#" class="btn btn-info">前端</a>
-                    </div>
-                    <div class="item-content">
-                        这是内容，这是内推，这真的是内容，这真的是内容啊
-                    </div>
-                </li>
-                <li class="blog-item">
-                    <div class="item-title">
-                        <h4>标题</h4>
-                    </div>
-                    <div class="item-tag">
-                        <a href="#" class="btn btn-info">前端</a>
-                    </div>
-                    <div class="item-content">
-                        这是内容，这是内推，这真的是内容，这真的是内容啊
-                    </div>
-                </li>
-                <li class="blog-item">
-                    <div class="item-title">
-                        <h4>标题</h4>
-                    </div>
-                    <div class="item-tag">
-                        <a href="#" class="btn btn-info">前端</a>
-                    </div>
-                    <div class="item-content">
-                        这是内容，这是内推，这真的是内容，这真的是内容啊
-                    </div>
-                </li>
-                <li class="blog-item">
-                    <div class="item-title">
-                        <h4>标题</h4>
-                    </div>
-                    <div class="item-tag">
-                        <a href="#" class="btn btn-info">前端</a>
-                    </div>
-                    <div class="item-content">
-                        这是内容，这是内推，这真的是内容，这真的是内容啊
-                    </div>
-                </li>
+                <?php
+                $item = $home_data->show_blog_list();
+//                print_r($blog_item) ;
+//                foreach ($blog_item as $item){
+                 echo "<li class='blog - item'><div class='item - title'>".$item->title."<h4></h4></div>"
+                    ."<div class='item - tag'><a href='#' class='btn btn-info'>".$item->tag."</a></div >"
+                    ."<div class='item-content'>".$item->content."</div ></li >" ;
+//                }
+                ?>
+
             </ul>
         </div>
     </div>

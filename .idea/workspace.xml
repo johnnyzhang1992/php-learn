@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1852a8c-6bbb-40e4-98b4-e88edb8a5521" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php-mysql/blog/controller/add_new.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php-mysql/blog/add_new.php" afterPath="$PROJECT_DIR$/php-mysql/blog/add_new.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php-mysql/blog/controller/add_new.php" afterPath="$PROJECT_DIR$/php-mysql/blog/controller/add_new.php" />
     </list>
     <ignored path="php-learning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,7 +42,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
               <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1478439883910" expanded="true" signature="136:255" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,40 +62,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login_ok.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php-mysql/blog/controller/login_ok.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="10" column="22" selection-start-line="9" selection-start-column="0" selection-end-line="12" selection-end-column="40" />
-              <folding>
-                <marker date="1478440450444" expanded="true" signature="360:412" ph="select passw... users" />
-                <marker date="1478440450444" expanded="true" signature="510:562" ph="select usern... users" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php-mysql/blog/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="46" column="32" selection-start-line="44" selection-start-column="4" selection-end-line="48" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="add_new.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php-mysql/blog/add_new.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+            <state relative-caret-position="600">
+              <caret line="40" column="127" selection-start-line="40" selection-start-column="127" selection-end-line="40" selection-end-column="127" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#0;n#div#1;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,9 +82,23 @@
       <file leaf-file-name="add_new.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/php-mysql/blog/controller/add_new.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="324">
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+              <folding>
+                <marker date="1478444560734" expanded="true" signature="438:565" ph="insert into tb_blog... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register_ok.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php-mysql/blog/controller/register_ok.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="648">
+              <caret line="18" column="11" selection-start-line="17" selection-start-column="0" selection-end-line="22" selection-end-column="1" />
+              <folding>
+                <marker date="1478275562196" expanded="true" signature="440:595" ph="insert into user... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -489,14 +483,7 @@
       <workItem from="1478179573723" duration="8568000" />
       <workItem from="1478223603810" duration="2446000" />
       <workItem from="1478255871818" duration="8603000" />
-      <workItem from="1478412759519" duration="7064000" />
-    </task>
-    <task id="LOCAL-00010" summary="php获取表单的值">
-      <created>1476547220932</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1476547220932</updated>
+      <workItem from="1478412759519" duration="7990000" />
     </task>
     <task id="LOCAL-00011" summary="php 日期和时间">
       <created>1476549874071</created>
@@ -834,11 +821,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478440632553</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="案例blog,新建文章的前端模板">
+      <created>1478443661795</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1478443661795</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179670000" />
+    <option name="totallyTimeSpent" value="180596000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
@@ -846,7 +840,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11283019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980832" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.79080826" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -876,7 +870,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加php 对象的高级应用" />
     <MESSAGE value="update README.md" />
     <MESSAGE value="添加 克隆对象" />
     <MESSAGE value="添加 对象比较" />
@@ -901,7 +894,8 @@
     <MESSAGE value="案例blog,登录后获取用户详细信息" />
     <MESSAGE value="案例blog,日常更新" />
     <MESSAGE value="案例blog,修复bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="案例blog,修复bug" />
+    <MESSAGE value="案例blog,新建文章的前端模板" />
+    <option name="LAST_COMMIT_MESSAGE" value="案例blog,新建文章的前端模板" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1193,16 +1187,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-mysql/blog/controller/register_ok.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-          <folding>
-            <marker date="1478275562196" expanded="true" signature="440:595" ph="insert into user... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-mysql/blog/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -1211,23 +1195,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-mysql/blog/class/system.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="955">
-          <caret line="39" column="52" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
-          <folding>
-            <marker date="1478439918954" expanded="true" signature="385:421" ph="select blog_... system_config" />
-            <marker date="1478439918954" expanded="true" signature="754:791" ph="select blog_... system_config" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php-mysql/blog/controller/get_home_data.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="703">
           <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
           <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
+            <element signature="e#6#86#0#PHP" expanded="false" />
             <marker date="1478440520825" expanded="true" signature="414:459" ph="select *from... users" />
           </folding>
         </state>
@@ -1249,7 +1222,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1478439883910" expanded="true" signature="136:255" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1258,7 +1233,7 @@
         <state relative-caret-position="540">
           <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
           <folding>
-            <element signature="e#6#87#0#PHP" expanded="true" />
+            <element signature="e#6#87#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1283,22 +1258,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php-mysql/blog/add_new.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+        <state relative-caret-position="600">
+          <caret line="40" column="127" selection-start-line="40" selection-start-column="127" selection-end-line="40" selection-end-column="127" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#0;n#div#1;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php-mysql/blog/controller/login_ok.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="10" column="22" selection-start-line="9" selection-start-column="0" selection-end-line="12" selection-end-column="40" />
+        <state relative-caret-position="360">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
           <folding>
             <marker date="1478440450444" expanded="true" signature="360:412" ph="select passw... users" />
             <marker date="1478440450444" expanded="true" signature="510:562" ph="select usern... users" />
@@ -1306,11 +1282,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/php-mysql/blog/class/system.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="955">
+          <caret line="39" column="52" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
+          <folding>
+            <marker date="1478439918954" expanded="true" signature="385:421" ph="select blog_... system_config" />
+            <marker date="1478439918954" expanded="true" signature="754:791" ph="select blog_... system_config" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-mysql/blog/controller/register_ok.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="18" column="11" selection-start-line="17" selection-start-column="0" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <marker date="1478275562196" expanded="true" signature="440:595" ph="insert into user... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php-mysql/blog/controller/add_new.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="324">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <marker date="1478444560734" expanded="true" signature="438:565" ph="insert into tb_blog... " />
+          </folding>
         </state>
       </provider>
     </entry>

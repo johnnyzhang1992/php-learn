@@ -35,6 +35,12 @@ require 'class/system.php';
                     <input type="text" class="form-control" name="blog_title" id="blog_title" placeholder="请填写标题" />
                 </div>
             </div>
+            <div class="blog_title form-group col-sm-12 clearfix">
+                <label for="blog_tag" class="col-sm-1 control-label" style="text-align: left">标签：</label>
+                <div class="col-sm-11">
+                    <input type="text" class="form-control" name="blog_tag" id="blog_tag" placeholder="请填写分类或者标签,多个请用英文逗号','分割开" />
+                </div>
+            </div>
             <div class="form-group col-sm-12 clearfix">
                 <label for="blog_content" class="control-label" style="padding: 0 15px">内容:</label>
                 <textarea class="form-control" rows="6" id="blog_content" name="blog_content" style=""></textarea>

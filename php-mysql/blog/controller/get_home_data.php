@@ -5,17 +5,18 @@
  * Date: 2016/11/4
  * Time: 22:40
  */
-require '../blog/class/conn.php';
+//require '../blog/class/conn.php';
 
 class getData{
     public $user_info;
     function get_data($username){
-        $sys_conn = new ConnDB();
-        $sys_conn->conn_db('localhost','root','','blog');
-        $conn = $sys_conn->GetConn();
+        $sys_conn1 = new ConnDB();
+        $sys_conn1->conn_db('localhost','root','','blog');
+        $conn = $sys_conn1->GetConn();
         mysqli_query($conn,"set names 'utf8' ");
         $sql = mysqli_query($conn," select *from users where username='$username'");
         $this->user_info = mysqli_fetch_array($sql);
+        $sys_conn1->CloseConn();
     }
     function get_user_name(){
         echo $this->user_info['username'];
@@ -32,8 +33,4 @@ class getData{
 }
 $home_data = new getData();
 $home_data->get_data($_COOKIE['username']);
-
-
-
-
-
+echo $_COOKIE['username'];

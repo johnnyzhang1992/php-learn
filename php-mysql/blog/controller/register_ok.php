@@ -16,8 +16,8 @@ $user_email = $_POST['user-email'];
 $user_description = $_POST['user-description'];
 $user_pwd = $_POST['user-pwd'];
 $info = mysqli_query($conn,"insert into users(username,password,email,avatar,description) VALUES ('$username','$user_pwd','$user_email','images/avatar/avatar.JPG','$user_description') ");
+$sys_conn->CloseConn();
 if($info){
 
     echo "<script> alert('恭喜你,注册成功！');window.location.href= '/php-mysql/blog/index.php';</script> ";
 }
-$sys_conn->CloseConn();

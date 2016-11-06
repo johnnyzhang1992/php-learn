@@ -32,11 +32,13 @@ class SystemInfo{
         if($this->site_name == ''){
             $this->site_name = '小小梦工场的网站';
         }
+//        setcookie('site_name',$this->site_name,time()+60*60*24*7);
         define('SITE_NAME',$this->site_name,TRUE);
         if($this->site_owner == ''){
             $this->site_owner = '小小梦工场';
         }
         define('SITE_OWNER',$this->site_owner,TRUE);
+//        setcookie('site_owner',$this->site_owner,time()+60*60*2487);
     }
 }
 $system_info = new SystemInfo();

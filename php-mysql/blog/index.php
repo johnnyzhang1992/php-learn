@@ -7,7 +7,6 @@
  */
 require 'class/system.php';
 require 'controller/get_home_data.php';
-
 //主页
 ?>
 <!DOCTYPE html>

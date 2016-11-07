@@ -16,6 +16,8 @@ require 'controller/get_home_data.php';
     <title><?php echo SITE_NAME ?></title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 <?php include 'header.php'; ?>

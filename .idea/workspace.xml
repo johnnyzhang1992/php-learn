@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1852a8c-6bbb-40e4-98b4-e88edb8a5521" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php-mysql/blog/controller/blog-delete.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php-mysql/blog/controller/update_blog.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php-mysql/blog/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php-mysql/blog/js/jquery.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php-mysql/blog/controller/get_home_data.php" afterPath="$PROJECT_DIR$/php-mysql/blog/controller/get_home_data.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php-mysql/blog/dashboard.php" afterPath="$PROJECT_DIR$/php-mysql/blog/dashboard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php-mysql/blog/edit.php" afterPath="$PROJECT_DIR$/php-mysql/blog/edit.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php-mysql/blog/header.php" afterPath="$PROJECT_DIR$/php-mysql/blog/header.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php-mysql/blog/index.php" afterPath="$PROJECT_DIR$/php-mysql/blog/index.php" />
     </list>
@@ -43,14 +41,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/php-mysql/blog/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="684">
+              <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
               <folding>
-                <marker date="1478514834702" expanded="true" signature="501:519" ph="..." />
-                <marker date="1478514834702" expanded="true" signature="638:656" ph="..." />
+                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,16 +63,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php-mysql/blog/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="562">
-              <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+            <state relative-caret-position="324">
+              <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
-                <marker date="1478516003212" expanded="true" signature="2570:2809" ph="..." />
-                <marker date="1478516003212" expanded="true" signature="2570:2959" ph="..." />
-                <marker date="1478516003212" expanded="true" signature="2857:2873" ph="..." />
+                <marker date="1478526627186" expanded="true" signature="2659:2898" ph="..." />
+                <marker date="1478526627186" expanded="true" signature="2659:3048" ph="..." />
+                <marker date="1478526627186" expanded="true" signature="2946:2962" ph="..." />
               </folding>
             </state>
           </provider>
@@ -84,33 +81,20 @@
       <file leaf-file-name="blog-delete.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php-mysql/blog/controller/blog-delete.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="216">
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php-mysql/book_search/index.php">
+        <entry file="file://$PROJECT_DIR$/php-mysql/blog/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1116">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="540">
+              <caret line="18" column="12" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="47" />
               <folding>
-                <marker date="1477925454720" expanded="true" signature="166:444" ph="..." />
-                <marker date="1477925454720" expanded="true" signature="174:436" ph="..." />
-                <marker date="1477925454720" expanded="true" signature="179:427" ph="..." />
-                <marker date="1477925454720" expanded="true" signature="226:421" ph="..." />
-                <marker date="1477925454720" expanded="true" signature="240:259" ph="..." />
-                <marker date="1477925454720" expanded="true" signature="260:415" ph="..." />
-                <marker date="1477925454720" expanded="true" signature="650:671" ph="select * fro... tb_book" />
-                <marker date="1477925454720" expanded="true" signature="909:945" ph="select * fro... tb_book" />
-                <marker date="1477925454720" expanded="true" signature="909:953" ph="select * fro... tb_book" />
-                <marker date="1477925454720" expanded="true" signature="909:968" ph="select * fro... tb_book" />
-                <marker date="1477925454720" expanded="true" signature="1267:1316" ph="..." />
-                <marker date="1477925454720" expanded="false" signature="1394:2184" ph="..." />
-                <marker date="1477925454720" expanded="true" signature="1430:1756" ph="..." />
-                <marker date="1477925454720" expanded="true" signature="1789:2175" ph="..." />
+                <marker date="1478526627162" expanded="true" signature="1022:1208" ph="..." />
               </folding>
             </state>
           </provider>
@@ -212,12 +196,12 @@
         <option value="$PROJECT_DIR$/php-mysql/blog/controller/login_ok.php" />
         <option value="$PROJECT_DIR$/php-mysql/blog/add_new.php" />
         <option value="$PROJECT_DIR$/php-mysql/blog/controller/add_new.php" />
-        <option value="$PROJECT_DIR$/php-mysql/blog/index.php" />
         <option value="$PROJECT_DIR$/php-mysql/blog/controller/get_home_data.php" />
         <option value="$PROJECT_DIR$/php-mysql/blog/edit.php" />
         <option value="$PROJECT_DIR$/php-mysql/blog/controller/update_blog.php" />
-        <option value="$PROJECT_DIR$/php-mysql/blog/header.php" />
+        <option value="$PROJECT_DIR$/php-mysql/blog/index.php" />
         <option value="$PROJECT_DIR$/php-mysql/blog/dashboard.php" />
+        <option value="$PROJECT_DIR$/php-mysql/blog/header.php" />
       </list>
     </option>
   </component>
@@ -349,7 +333,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -382,17 +366,18 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\laragon\www\php-learning\php-mysql\blog\images\avatar" />
-      <recent name="D:\laragon\www\php-learning\php-mysql\blog" />
-      <recent name="D:\laragon\www\php-learning\base" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\laragon\www\php-learning\php-mysql\blog\css" />
       <recent name="D:\laragon\www\php-learning\oop" />
       <recent name="D:\laragon\www\php-learning\file-system\file-upload" />
       <recent name="D:\laragon\www\php-learning\php-web" />
       <recent name="D:\laragon\www\php-learning\php-array" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\laragon\www\php-learning\php-mysql\blog\js" />
+      <recent name="D:\laragon\www\php-learning\php-mysql\blog\images\avatar" />
+      <recent name="D:\laragon\www\php-learning\php-mysql\blog" />
+      <recent name="D:\laragon\www\php-learning\base" />
     </key>
   </component>
   <component name="RunManager">
@@ -498,14 +483,7 @@
       <workItem from="1478412759519" duration="10898000" />
       <workItem from="1478482876405" duration="626000" />
       <workItem from="1478506239485" duration="4871000" />
-      <workItem from="1478525576654" duration="363000" />
-    </task>
-    <task id="LOCAL-00013" summary="update README.md">
-      <created>1476550008481</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1476550008481</updated>
+      <workItem from="1478525576654" duration="1580000" />
     </task>
     <task id="LOCAL-00014" summary="update cookie and session">
       <created>1476633632632</created>
@@ -843,11 +821,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478448041260</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="案例blog,后台首页模板">
+      <created>1478525975263</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1478525975263</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189364000" />
+    <option name="totallyTimeSpent" value="190581000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
@@ -885,7 +870,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加 对象比较" />
     <MESSAGE value="添加 对象类型检测" />
     <MESSAGE value="添加 魔术方法__set()，__get()" />
     <MESSAGE value="添加 魔术方法__call()方法" />
@@ -910,7 +894,8 @@
     <MESSAGE value="案例blog,新建文章的前端模板" />
     <MESSAGE value="案例blog,实现添加文章信息入库" />
     <MESSAGE value="案例blog,首页展示文章内容" />
-    <option name="LAST_COMMIT_MESSAGE" value="案例blog,首页展示文章内容" />
+    <MESSAGE value="案例blog,后台首页模板" />
+    <option name="LAST_COMMIT_MESSAGE" value="案例blog,后台首页模板" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -931,20 +916,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/file-system/flock.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file-system/file-handle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/file-system/scan-dir.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -1202,6 +1173,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/php-mysql/fetch_array.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <marker date="1477924322740" expanded="true" signature="609:630" ph="select * fro... tb_book" />
+            <marker date="1477924322740" expanded="true" signature="803:835" ph="select * fro... tb_book" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-mysql/blog/controller/get_home_data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <marker date="1478513927358" expanded="true" signature="437:482" ph="select *from... users" />
+            <marker date="1478513927358" expanded="true" signature="1190:1235" ph="select *from... tb_blog" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-mysql/blog/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-mysql/blog/controller/update_blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-mysql/blog/add_new.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="38" column="26" selection-start-line="29" selection-start-column="6" selection-end-line="52" selection-end-column="15" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-mysql/blog/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-mysql/blog/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php-mysql/book_search/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1116">
@@ -1225,54 +1262,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-mysql/fetch_array.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <marker date="1477924322740" expanded="true" signature="609:630" ph="select * fro... tb_book" />
-            <marker date="1477924322740" expanded="true" signature="803:835" ph="select * fro... tb_book" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-mysql/blog/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-mysql/blog/controller/get_home_data.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <marker date="1478513927358" expanded="true" signature="437:482" ph="select *from... users" />
-            <marker date="1478513927358" expanded="true" signature="1190:1235" ph="select *from... tb_blog" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-mysql/blog/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-mysql/blog/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <marker date="1478514834702" expanded="true" signature="501:519" ph="..." />
-            <marker date="1478514834702" expanded="true" signature="638:656" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-mysql/blog/controller/update_blog.php">
+    <entry file="file://$PROJECT_DIR$/php-mysql/blog/controller/blog-delete.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
@@ -1280,33 +1270,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php-mysql/blog/add_new.php">
+    <entry file="file://$PROJECT_DIR$/php-mysql/blog/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="38" column="26" selection-start-line="29" selection-start-column="6" selection-end-line="52" selection-end-column="15" />
+        <state relative-caret-position="540">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="47" />
           <folding>
-            <element signature="e#6#87#0#PHP" expanded="true" />
+            <marker date="1478526627162" expanded="true" signature="1022:1208" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-mysql/blog/controller/blog-delete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php-mysql/blog/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+        <state relative-caret-position="324">
+          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
-            <marker date="1478516003212" expanded="true" signature="2570:2809" ph="..." />
-            <marker date="1478516003212" expanded="true" signature="2570:2959" ph="..." />
-            <marker date="1478516003212" expanded="true" signature="2857:2873" ph="..." />
+            <marker date="1478526627186" expanded="true" signature="2659:2898" ph="..." />
+            <marker date="1478526627186" expanded="true" signature="2659:3048" ph="..." />
+            <marker date="1478526627186" expanded="true" signature="2946:2962" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-mysql/blog/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -36,13 +36,16 @@ class getData{
         $sys_conn1->conn_db('localhost','root','','blog');
         $conn = $sys_conn1->GetConn();
         mysqli_query($conn,"set names 'utf8' ");
-//        $blog_list = (object)null;
+        $blog_list = [];
+
         $sql = mysqli_query($conn," select *from tb_blog where author='$username'");
-//        do{
-//            $blog_list  = $blog_list+ mysqli_fetch_object($sql);
-//            $this->blog_list = $this->blog_list+$blog_list;
-//        }while($sql);
-        $blog_list  =  mysqli_fetch_object($sql);
+        $info = mysqli_fetch_array($sql);
+        do{
+            array_push($blog_list,$info);
+        }while($info = mysqli_fetch_array($sql));
+
+//        $blog_list  =  mysqli_fetch_array($sql);
+//        $this->blog_list = json_encode($blog_list);
         $this->blog_list = $blog_list;
     }
     function show_blog_list(){

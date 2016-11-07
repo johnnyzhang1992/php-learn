@@ -66,13 +66,13 @@ require 'controller/get_home_data.php';
             <ul class="blog-list">
                 <?php
                 $item = $home_data->show_blog_list();
-                echo "<li class='blog - item'><div class='item - title'>".$item->title."<h4></h4></div>"
-                    ."<div class='item - tag'><a href='#' class='btn btn-info'>".$item->tag."</a></div >"
-                    ."<div class='item-content'>".$item->content."</div >"
-                    ."<div><a href='#' style='margin-right:5px'>编辑</a><a href='controller/blog-delete.php'>删除</a></div>"
-                    ."</li >" ;
+                $num = count($item);
+                for($i=0;$i<$num;$i++){
+                    echo "<li class='blog-item'><div class='item-title'>".$item[$i]['title']."<h4></h4></div>"
+                        ."<div class='item-tag'><a href='#' class='btn btn-info'>".$item[$i]['tag']."</a></div >"
+                        ."<div class='item-content'>".$item[$i]['content']."</div ></li >" ;
+                }
                 ?>
-
             </ul>
         </div>
     </div>

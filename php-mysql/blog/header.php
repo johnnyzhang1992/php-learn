@@ -16,7 +16,7 @@
         <span class="pull-right">
             <?php
             if(!empty($_COOKIE['user_name'])){
-                echo "<a href='/#' style='margin-right: 10px'>".$_COOKIE['user_name']."</a><a href='#'>退出</a>";
+                echo "<a href='dashboard.php' style='margin-right: 10px'>".$_COOKIE['user_name']."</a><a href='#'>退出</a>";
             }else{
              echo "<a href=\"login.php\" style='margin-right: 10px'>登录</a><a href=\"register.php\">注册</a>";
             }

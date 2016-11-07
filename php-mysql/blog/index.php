@@ -24,19 +24,16 @@ require 'controller/get_home_data.php';
         <div class="content-header clearfix">
           <span class="pull-left">最新动态</span>
             <span class="pull-right">
-                <a href="edit.php">写文章</a>
+                <a href="add_new.php" target="_blank">写文章</a>
             </span>
         </div>
         <div class="blog-content">
             <ul class="blog-list">
                 <?php
                 $item = $home_data->show_blog_list();
-//                print_r($blog_item) ;
-//                foreach ($blog_item as $item){
                  echo "<li class='blog - item'><div class='item - title'>".$item->title."<h4></h4></div>"
                     ."<div class='item - tag'><a href='#' class='btn btn-info'>".$item->tag."</a></div >"
                     ."<div class='item-content'>".$item->content."</div ></li >" ;
-//                }
                 ?>
 
             </ul>

@@ -22,7 +22,7 @@ if($user_pwd == $info[0]){
     echo 'user_name'.$info1[0];
     setcookie("user_name","$info1[0]",time()+60*60*24*7,'/');
     echo $_COOKIE['user_name'].'<br>';
-    echo "<script>;window.location.href= '/php-mysql/blog/index.php';</script>";
+    echo "<script>window.location.href= '/php-mysql/blog/index.php';</script>";
 }else{
     echo "<script>alert('请重新填写密码！');</script>";
 }

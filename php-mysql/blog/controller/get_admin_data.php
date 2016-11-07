@@ -2,12 +2,11 @@
 /**
  * Created by PhpStorm.
  * User: zq199
- * Date: 2016/11/4
- * Time: 22:40
+ * Date: 2016/11/7
+ * Time: 22:12
  */
-//require '../blog/class/conn.php';
-
-class getData{
+//获取个人主页后台数据
+class getAdminData{
     public $user_info;
     public $blog_list;
     function get_data($username){

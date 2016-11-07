@@ -33,17 +33,23 @@ require 'controller/get_home_data.php';
     <div class="main-content col-md-10">
         <div id="system_config">
             <div class="breadcrumb"><a href="dashboard.php" style="margin-right:5px ">后台</a>\<span style="margin-left: 5px">系统管理</span></div>
-            <form class="form-group form-horizontal clearfix" action="controller/add_new.php" method="post"  name="add-blog-form">
+            <form class="form-group form-horizontal clearfix" action="controller/update_config.php" method="post"  name="update-system-config">
                 <div class="site-name form-group col-sm-12 clearfix">
                     <label for="site_name" class="col-sm-2 control-label" style="text-align: left">网站名字：</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" name="site_name" id="site_name" placeholder="" />
+                        <input type="text" class="form-control" name="site_name" id="site_name" placeholder="<?php $system_info->out_name()  ?>" />
                     </div>
                 </div>
                 <div class="site-owner form-group col-sm-12 clearfix">
                     <label for="site_owner" class="col-sm-2 control-label" style="text-align: left">网站拥有者：</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" name="site_hoster" id="site_owner" placeholder="" />
+                        <input type="text" class="form-control" name="site_hoster" id="site_owner" placeholder="<?php $system_info->out_owner() ?>" />
+                    </div>
+                </div>
+                <div class="site-owner form-group col-sm-12 clearfix">
+                    <label for="site_des" class="col-sm-2 control-label" style="text-align: left">网站描述：</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="site_description" id="site_des" placeholder="<?php $system_info->out_description() ?>" />
                     </div>
                 </div>
                 <div class="form-group col-sm-12 clearfix">

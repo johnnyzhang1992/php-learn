@@ -73,7 +73,7 @@ require 'controller/get_home_data.php';
                         $item_content = mb_substr($item[$i]['content'],0,160). '...';
                     } else{ $item_content = $item[$i]['content'];}
 
-                    echo "<li class='blog-item'><div class='item-title'>".$item[$i]['title']."<h4></h4></div>"
+                    echo "<li class='blog-item'><div class='item-title'><h4>".$item[$i]['title']."</h4></div>"
                         ."<div class='item-tag'><a href='#' class='btn btn-info'>".$item[$i]['tag']."</a></div >"
                         ."<div class='item-content'>".$item_content."</div ></li >" ;
                 }

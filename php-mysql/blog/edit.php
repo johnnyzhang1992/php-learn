@@ -7,7 +7,7 @@
  */
 //内容编辑页面
 require 'class/system.php';
-require '';
+require  '';
 //主页
 ?>
 <!DOCTYPE html>

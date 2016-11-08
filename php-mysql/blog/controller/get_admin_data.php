@@ -42,8 +42,8 @@ class getAdminData{
         $this->blog_list = $blog_list;
     }
     function show_blog_list(){
-        return $this->blog_list;
-    }
+    return $this->blog_list;
+}
 }
 $home_data = new getData();
 $home_data->get_data($_COOKIE['user_name']);

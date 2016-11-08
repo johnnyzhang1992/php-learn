@@ -12,7 +12,6 @@ class getData{
     public $blog_list;
     function get_data($username){
         $sys_conn1 = new ConnDB();
-        $sys_conn1->conn_db('localhost','root','','blog');
         $conn = $sys_conn1->GetConn();
         mysqli_query($conn,"set names 'utf8' ");
         $sql = mysqli_query($conn," select *from users where username='$username'");
@@ -33,7 +32,7 @@ class getData{
     }
     function get_blog_list($username){
         $sys_conn1 = new ConnDB();
-        $sys_conn1->conn_db('localhost','root','','blog');
+//        $sys_conn1->conn_db('localhost','root','','blog');
         $conn = $sys_conn1->GetConn();
         mysqli_query($conn,"set names 'utf8' ");
         $blog_list = [];

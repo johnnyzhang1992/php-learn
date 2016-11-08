@@ -8,7 +8,6 @@
 require '../class/conn.php';
 
 $sys_conn = new ConnDB();
-$sys_conn->conn_db('localhost','root','','blog');
 $conn = $sys_conn->GetConn();
 mysqli_query($conn,"set names 'utf8' ");
 $user_email = $_POST['user-email'];

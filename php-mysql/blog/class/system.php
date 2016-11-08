@@ -13,7 +13,7 @@ class SystemInfo{
     var $site_description;//站点描述
     function get_name(){
         $sys_conn = new ConnDB();
-        $sys_conn->conn_db('localhost','root','','blog');
+//        $sys_conn->conn_db('localhost','root','','blog');
         $conn = $sys_conn->GetConn();
         mysqli_query($conn,"set names 'utf8' ");
         $sql= mysqli_query($conn,"select blog_title from system_config");
@@ -23,7 +23,7 @@ class SystemInfo{
     }
     function get_owner(){
         $sys_conn = new ConnDB();
-        $sys_conn->conn_db('localhost','root','','blog');
+//        $sys_conn->conn_db('localhost','root','','blog');
         $conn = $sys_conn->GetConn();
         mysqli_query($conn,"set names 'utf8' ");
         $sql1 = mysqli_query($conn,"select blog_hoster from system_config");
@@ -34,7 +34,7 @@ class SystemInfo{
     }
     function get_description(){
         $sys_conn = new ConnDB();
-        $sys_conn->conn_db('localhost','root','','blog');
+//        $sys_conn->conn_db('localhost','root','','blog');
         $conn = $sys_conn->GetConn();
         mysqli_query($conn,"set names 'utf8' ");
         $sql1 = mysqli_query($conn,"select site_description from system_config");

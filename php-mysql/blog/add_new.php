@@ -16,6 +16,8 @@ require 'class/system.php';
     <title><?php echo SITE_NAME ?>|新建blog</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <style>
         .control-label{
             line-height: 34px;

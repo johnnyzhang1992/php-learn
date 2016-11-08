@@ -29,6 +29,8 @@ $item = get_blog_list($id);
     <title><?php echo SITE_NAME ?>| 编辑文章</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <style>
         .control-label{
             line-height: 34px;

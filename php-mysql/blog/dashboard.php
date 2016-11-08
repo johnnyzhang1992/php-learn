@@ -68,9 +68,14 @@ require 'controller/get_home_data.php';
                 $item = $home_data->show_blog_list();
                 $num = count($item);
                 for($i=0;$i<$num;$i++){
+                    $item_content = '';
+                    if(strlen($item[$i]['content'])>160){
+                        $item_content = mb_substr($item[$i]['content'],0,160). '...';
+                    } else{ $item_content = $item[$i]['content'];}
+
                     echo "<li class='blog-item'><div class='item-title'>".$item[$i]['title']."<h4></h4></div>"
                         ."<div class='item-tag'><a href='#' class='btn btn-info'>".$item[$i]['tag']."</a></div >"
-                        ."<div class='item-content'>".$item[$i]['content']."</div ></li >" ;
+                        ."<div class='item-content'>".$item_content."</div ></li >" ;
                 }
                 ?>
             </ul>

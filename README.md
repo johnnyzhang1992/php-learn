@@ -41,3 +41,5 @@
  * sha1() 函数
  
 ## PHP 操作 MySQL 数据库
+ * book_search 图书检索案例
+ * blog 简易的文章发布管理案例

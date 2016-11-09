@@ -14,13 +14,10 @@ $id = $url_parse[1];
 $sys_conn = new ConnDB();
 $conn = $sys_conn->GetConn();
 mysqli_query($conn,"set names 'utf8' ");
-//$blog_id= $_POST['id'];
 $blog_title = $_POST['blog_title'];
 $blog_tag = $_POST['blog_tag'];
 $blog_content = $_POST['blog_content'];
-echo $blog_content.'<br>';
 
-echo 'id:'.$id;
 $sql1 = mysqli_query($conn,"update tb_blog set title='$blog_title',tag='$blog_tag',content='$blog_content' where id='$id'");
 if($sql1){
     $sys_conn->CloseConn();

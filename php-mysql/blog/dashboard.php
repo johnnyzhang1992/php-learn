@@ -18,6 +18,11 @@ require 'controller/get_home_data.php';
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <style>
+        .item-manage{
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
 <body>
 <?php include 'header.php'; ?>
@@ -68,14 +73,17 @@ require 'controller/get_home_data.php';
                 $item = $home_data->show_blog_list();
                 $num = count($item);
                 for($i=0;$i<$num;$i++){
+                    $id = $i+1;
                     $item_content = '';
                     if(strlen($item[$i]['content'])>160){
                         $item_content = mb_substr($item[$i]['content'],0,160). '...';
                     } else{ $item_content = $item[$i]['content'];}
 
-                    echo "<li class='blog-item'><div class='item-title'><h4>".$item[$i]['title']."</h4></div>"
+                    echo "<li class='blog-item'><div class='item-title'><h4><a href='/php-mysql/blog/article.php?id=$id' target='_blank'>".$item[$i]['title']."</a></h4></div>"
                         ."<div class='item-tag'><a href='#' class='btn btn-info'>".$item[$i]['tag']."</a></div >"
-                        ."<div class='item-content'>".$item_content."</div ></li >" ;
+                        ."<div class='item-content'>".$item_content."</div >"
+                        ."<div class='item-manage'><a href='/php-mysql/blog/edit.php?id=$id' class='btn btn-info' target='_blank'>编辑</a><a href='/php-mysql/blog/delete.php?id=$id' class='btn btn-warning' target='_blank'>删除</a></div>"
+                        ."</li >" ;
                 }
                 ?>
             </ul>

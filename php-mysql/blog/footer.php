@@ -9,5 +9,5 @@
 ?>
 <!--网站footer-->
 <div class="footer col-md-12">
-   Copyright &copy; 2016 <a href="/index.php" target="_blank" ><?php echo SITE_OWNER ?><?php $_COOKIE['site_name'] ?></a>
+   Copyright &copy; 2016 <a href="/php-mysql/blog/index.php" target="_blank" ><?php echo SITE_OWNER ?><?php $_COOKIE['site_name'] ?></a>
 </div>

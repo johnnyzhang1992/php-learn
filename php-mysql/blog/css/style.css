@@ -55,3 +55,14 @@ li.blog-item {
     text-align: center;
     line-height: 50px;
 }
+.btn{
+    padding: 4px 10px;
+    margin-right: 5px;
+}
+@media (min-width: 768px){
+    .form-horizontal .control-label {
+        padding-top: 0px;
+        margin-bottom: 0;
+        text-align: right;
+    }
+}

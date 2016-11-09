@@ -2,13 +2,27 @@
 /**
  * Created by PhpStorm.
  * User: zq199
- * Date: 2016/10/31
- * Time: 23:02
+ * Date: 2016/11/8
+ * Time: 23:29
  */
 //内容编辑页面
 require 'class/system.php';
-require  '';
-//主页
+
+$url = $_SERVER["QUERY_STRING"];
+$url_parse = explode('=', $url);
+$id = $url_parse[1];
+//$id = $_POST['id'];
+function get_blog_list($id){
+    $sys_conn1 = new ConnDB();
+    $conn = $sys_conn1->GetConn();
+    mysqli_query($conn,"set names 'utf8' ");
+
+    $sql = mysqli_query($conn," select *from tb_blog where id='$id'");
+    $info = mysqli_fetch_array($sql);
+
+    return $info;
+}
+$item = get_blog_list($id);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,6 +31,8 @@ require  '';
     <title><?php echo SITE_NAME ?>| 编辑文章</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <style>
         .control-label{
             line-height: 34px;
@@ -27,24 +43,30 @@ require  '';
 <body>
 <?php include 'header.php'; ?>
 <div class="content col-md-10 col-md-offset-1">
-    <div class="add-blog">
-        <div class="breadcrumb"><a href="index.php" style="margin-right:5px ">blog</a>\<span style="margin-left: 5px">新建</span></div>
-        <form class="form-group form-horizontal" action="controller/add_new.php" method="post"  name="update-blog-form">
+    <div class="add-blog col-sm-12">
+        <div class="breadcrumb"><a href="index.php" style="margin-right:5px ">文章</a>\<span style="margin-left: 5px"><?php echo $id ?></span></div>
+        <form class="form-group form-horizontal" action="controller/update_blog.php" method="post"  name="edit-blog-form">
+            <div class="blog_id form-group col-sm-12 clearfix">
+                <label for="blog_id" class="col-sm-1 control-label" style="text-align: left">id：</label>
+                <div class="col-sm-11">
+                    <input type="text" class="form-control"  name="id" id="blog_id" placeholder="<?php echo $item['id'] ?>" />
+                </div>
+            </div>
             <div class="blog_title form-group col-sm-12 clearfix">
                 <label for="blog_title" class="col-sm-1 control-label" style="text-align: left">标题：</label>
                 <div class="col-sm-11">
-                    <input type="text" class="form-control" name="blog_title" id="blog_title" placeholder="请填写标题" />
+                    <input type="text" class="form-control" name="blog_title" id="blog_title" placeholder="<?php echo $item['title'] ?>" />
                 </div>
             </div>
             <div class="blog_title form-group col-sm-12 clearfix">
                 <label for="blog_tag" class="col-sm-1 control-label" style="text-align: left">标签：</label>
                 <div class="col-sm-11">
-                    <input type="text" class="form-control" name="blog_tag" id="blog_tag" placeholder="请填写分类或者标签,多个请用英文逗号','分割开" />
+                    <input type="text" class="form-control" name="blog_tag" id="blog_tag" placeholder="<?php echo $item['tag'] ?>" />
                 </div>
             </div>
             <div class="form-group col-sm-12 clearfix">
                 <label for="blog_content" class="control-label" style="padding: 0 15px">内容:</label>
-                <textarea class="form-control" rows="6" id="blog_content" name="blog_content" style=""></textarea>
+                <textarea class="form-control" rows="6" id="blog_content" name="blog_content" style=""><?php echo $item['content'] ?></textarea>
             </div>
             <div class="form-group clearfix">
                 <div class="col-sm-12">
@@ -57,3 +79,6 @@ require  '';
 <?php include 'footer.php'; ?>
 </body>
 </html>
+
+
+

@@ -45,11 +45,11 @@ $item = get_blog_list($id);
 <div class="content col-md-10 col-md-offset-1">
     <div class="add-blog col-sm-12">
         <div class="breadcrumb"><a href="index.php" style="margin-right:5px ">文章</a>\<span style="margin-left: 5px"><?php echo $id ?></span></div>
-        <form class="form-group form-horizontal" action="controller/update_blog.php" method="post"  name="edit-blog-form">
+        <form class="form-group form-horizontal" action="controller/update_blog.php?id=<?php echo $id ?>" method="post"  name="edit-blog-form">
             <div class="blog_id form-group col-sm-12 clearfix">
                 <label for="blog_id" class="col-sm-1 control-label" style="text-align: left">id：</label>
                 <div class="col-sm-11">
-                    <input type="text" class="form-control"  name="id" id="blog_id" placeholder="<?php echo $item['id'] ?>" />
+                    <input type="text" class="form-control"  name="blog_id" id="blog_id" placeholder="<?php echo $item['id'] ?>" />
                 </div>
             </div>
             <div class="blog_title form-group col-sm-12 clearfix">

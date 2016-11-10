@@ -10,10 +10,12 @@
  
  ## 数据库的结构
  库名：blog
- >主要用到三个库
+ 
+ >主要用到三个表
  * system_config
  * tb_blog
  * users
+ 
  >各个表的功能
  * 表一用来存储网站的基本信息：blog_title,blog_hoster,blog_description
  * 表二存储文章的信息：id,author,title,tag,content,status,created_time

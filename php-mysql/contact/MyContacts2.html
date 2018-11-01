@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Yilu's Contact List </title>
+    <meta charset="windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <style>
+
+    </style>
+</head>
+<body style="background-color: BurlyWood;">
+<!--content-->
+<div class="content">
+    <h1><center>Yilu's Contact List</center></h1>
+
+    <table id="table" border="1">
+        <tr>
+            <td><button onclick="selectAll()"><input type="checkbox" id="myCheck" value="out"></button></td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>City</td>
+            <td>State</td>
+            <td>Date of Birthday</td>
+            <td>Age</td>
+            <td>Email</td>
+        </tr>
+
+    </table>
+    <button onclick="updateContact('new')">New Contact</button>
+    <button onclick="updateContact('edit')">Edit Contact</button>
+    <button onclick="deleteContact()">Delete Contact</button>
+</div>
+<!--table modal-->
+<div id="table_modal" class="table-modal" style="display: none">
+    <div id="modal_new" class="modal-top new">New Contact</div>
+    <div  id="modal_edit" class="modal-top edit">Edit Contact</div>
+    <span class="close" onclick="closeModal()">&times;</span>
+    <!--<form action="" method="post">-->
+        <input id="modal_type" type="hidden" name="type" value="create">
+        <input id="contact_id" type="hidden" name="contact_id" value="-1">
+        <div id="modal_message" class="message" style="display: none">
+            It is not possible to edit multiple contacts at the moment. We apologize for any inconvenience caused.
+        </div>
+        <div class="modal-content">
+            <div class="item">
+                <label for="first_name" class="label">First Name</label>
+                <div class="input">
+                    <input id="first_name" type="text" name="first_name" value="">
+                </div>
+            </div>
+            <div class="item">
+                <label for="last_name" class="label">Last Name</label>
+                <div class="input">
+                    <input id="last_name" type="text" name="last_name" value="">
+                </div>
+            </div>
+            <div class="item">
+                <label for="city" class="label">City</label>
+                <div class="input">
+                    <input id="city" type="text" name="city" value="">
+                </div>
+            </div>
+            <div class="item">
+                <label for="state" class="label">State</label>
+                <div class="input">
+                    <input id="state" type="text" name="state" value="">
+                </div>
+            </div>
+            <div class="item">
+                <label for="birthday" class="label">Date of Birthday</label>
+                <div class="input">
+                    <input id="birthday" type="text" name="birthday" value="">
+                </div>
+            </div>
+            <div class="item">
+                <label for="age" class="label">Age</label>
+                <div class="input">
+                    <input id="age" type="number" name="age" value="">
+                </div>
+            </div>
+            <div class="item">
+                <label for="email" class="label">Email</label>
+                <div class="input">
+                    <input id="email" type="email" name="email" value="">
+                </div>
+            </div>
+        </div>
+        <div class="submit">
+            <button id="submit" type="submit" class="submit-modal" onclick="submit()">Add Contact</button>
+        </div>
+    <!--</form>-->
+</div>
+<script>
+    // select contact id array
+    var selected_ids = [];
+    // new or edit contact
+    function updateContact(state){
+
+        if(state== 'edit'){
+            var contactIds = document.getElementsByName('select_contact_id');
+            selected_ids = [];
+            for(var i=0;i<contactIds.length;i++){
+                if(contactIds[i].checked){
+                    selected_ids.push(contactIds[i].value);
+                }
+            }
+            console.log(selected_ids);
+            console.log(selected_ids.length);
+            if(selected_ids.length<1){
+                alert('you should select one');
+            }else if(selected_ids.length>1){
+                alert('you should select one')
+            }else{
+                document.getElementById('table_modal').style.display = 'block';
+                document.getElementById('modal_new').style.display = 'none';
+                document.getElementById('modal_edit').style.display = 'block';
+                document.getElementById('modal_type').value = 'edit';
+                document.getElementById('contact_id').value = -1;
+                document.getElementById('submit').innerHTML = 'Save Changes';
+                document.getElementById('modal_message').style.display = 'block';
+
+                // change modal data
+                var _row  = document.getElementById("table").rows[parseInt(selected_ids[0])-1].cells;
+                console.log(_row);
+
+                document.getElementById('first_name').value= _row[1].innerHTML;
+                document.getElementById('last_name').value = _row[2].innerHTML;
+                document.getElementById('city').value  = _row[3].innerHTML;
+                document.getElementById('state').value  = _row[4].innerHTML;
+                document.getElementById('birthday').value  = _row[5].innerHTML;
+                document.getElementById('age').value  = _row[6].innerHTML;
+                document.getElementById('email').value  = _row[7].innerHTML ;
+            }
+        }else{
+            document.getElementById('table_modal').style.display = 'block';
+            document.getElementById('modal_new').style.display = 'block';
+            document.getElementById('modal_edit').style.display = 'none';
+            document.getElementById('modal_type').value = 'create';
+            document.getElementById('submit').innerHTML = 'Add Contact';
+        }
+    }
+
+    // delete
+    function deleteContact() {
+        selected_ids = [];
+        var contactIds = document.getElementsByName('select_contact_id');
+        for(var i=0;i<contactIds.length;i++){
+            if(contactIds[i].checked){
+                selected_ids.push(contactIds[i].value);
+            }
+        }
+        if(selected_ids.length<1){
+            alert('you should select one')
+        }
+        console.log(selected_ids.toString());
+        for(var j=0;j<selected_ids.length;j++){
+            document.getElementById("table").deleteRow(selected_ids[j]-1);
+        }
+
+    }
+    // save change
+    function submit(e) {
+        var state = document.getElementById('modal_type').value;
+        // stop form submit
+        if(e && e.preventDefault){
+            e.preventDefault();
+        }else{
+            window.event.returnValue = false;
+        }
+        if(state =='create'){
+            var id = document.getElementById('table').rows.length+1;
+            var chk="<td><input type='checkbox' name='select_contact_id' id='chk_"+id+"' value='"+id+"'/></td>";
+            var table = document.getElementById("table");
+            var row = table.insertRow(id-1);
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            var cell4 = row.insertCell(3);
+            var cell5 = row.insertCell(4);
+            var cell6 = row.insertCell(5);
+            var cell7 = row.insertCell(6);
+            var cell8 = row.insertCell(7);
+            cell1.innerHTML = chk;
+            cell2.innerHTML = document.getElementById('first_name').value;
+            cell3.innerHTML = document.getElementById('last_name').value;
+            cell4.innerHTML = document.getElementById('city').value;
+            cell5.innerHTML = document.getElementById('state').value;
+            cell6.innerHTML = document.getElementById('birthday').value;
+            cell7.innerHTML = document.getElementById('age').value;
+            cell8.innerHTML = document.getElementById('email').value;
+            document.getElementById('table_modal').style.display = 'none';
+        }else{
+            // edit
+            console.log(selected_ids);
+            var _row  = document.getElementById("table").rows[parseInt(selected_ids[0])-1].cells;
+            console.log(_row);
+            _row[1].innerHTML = document.getElementById('first_name').value;
+            _row[2].innerHTML = document.getElementById('last_name').value;
+            _row[3].innerHTML = document.getElementById('city').value;
+            _row[4].innerHTML = document.getElementById('state').value;
+            _row[5].innerHTML = document.getElementById('birthday').value;
+            _row[6].innerHTML = document.getElementById('age').value;
+            _row[7].innerHTML = document.getElementById('email').value;
+            // _row[8].innerHTML =
+            document.getElementById('table_modal').style.display = 'none';
+        }
+
+    }
+    // close Modal
+    function closeModal() {
+        document.getElementById('table_modal').style.display = 'none';
+    }
+    // select all contacts
+    function selectAll() {
+        var contactIds = document.getElementsByName('select_contact_id');
+        var is_check_all = document.getElementById('myCheck').value;
+        for(var i=0;i<contactIds.length;i++){
+            contactIds[i].checked = is_check_all == 'in' ? false : true;
+        }
+        if(is_check_all == 'in'){
+            document.getElementById('myCheck').value = 'out';
+        }else{
+            document.getElementById('myCheck').value = 'in'
+        }
+    }
+</script>
+
+</body>
+</html>
+
+
+<!--
+ 
+ /*
+ 
+ design check box attibute true or false go through 1st column
+ 
+ 
+ show tables
+ 
+ use dbname
+ 
+ select now
+ select version
+ 
+ show grants;
+ 
+ demiliter //
+ 
+ select now;
+ 
+ create procedure
+ //
+ 
+ drop procedure
+ //
+ 
+ select * from Classes;
+ 
+ insert into
+ 
+ 
+ create
+ read
+ update
+ delete
+ 
+ client side scripting  -  js
+ vs
+ server side scripting  - php
+ difference is where it is executed at
+ 
+ 
+ username = dbname
+ 
+ 
+ ajax  //does something else in the backgroud when page is loading
+ 
+ 
+ 
+ 
